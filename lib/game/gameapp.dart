@@ -3,7 +3,6 @@ import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 import 'package:slicer/constants/constants.dart';
 import 'package:slicer/game/game.dart';
-import 'package:slicer/game/game_data.dart';
 import 'package:slicer/widgets/game_over_widget.dart';
 import 'package:slicer/widgets/life.dart';
 import 'package:slicer/widgets/pause_button.dart';

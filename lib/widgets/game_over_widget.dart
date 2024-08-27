@@ -26,9 +26,17 @@ Widget gameOverWidget(BuildContext context) {
                 'Game over',
                 style: TextStyle(fontSize: 30, color: Colors.black),
               ),
-              content: Text(
-                'score ${GameData.score.value.toString()}',
-                style: const TextStyle(fontSize: 20, color: Colors.black),
+              content: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Visibility(
+                    visible: GameData.score.value>scoreNotifier.value.first.score,
+                    child: const Text('New high score')),
+                  Text(
+                    'Score ${GameData.score.value.toString()}',
+                    style: const TextStyle(fontSize: 20, color: Colors.black),
+                  ),
+                ],
               ),
               actions: [
                 customButton(
