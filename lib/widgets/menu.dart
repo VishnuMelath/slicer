@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:slicer/database/score_db_services.dart';
 import 'package:slicer/game/gameapp.dart';
 import 'package:slicer/scores.dart';
 import 'package:slicer/widgets/custom_button.dart';
@@ -10,7 +9,7 @@ class GameMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ScoreDbServices().getAllScores();
+
     return Center(
       child: Column( 
         mainAxisSize: MainAxisSize.min,

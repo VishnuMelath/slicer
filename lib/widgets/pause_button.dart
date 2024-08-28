@@ -6,7 +6,6 @@ Widget pauseButton(BuildContext context,TestGame game)
 {
   bool paused=false;
   return Positioned(
-    top: 20,
     right: 20,
     child: IconButton(onPressed: () {
       if (!paused) {
@@ -20,6 +19,6 @@ Widget pauseButton(BuildContext context,TestGame game)
     game.resumeEngine();
     paused=!paused;
     }
-    }, icon:const Icon(Icons.pause,size: 40,)),
+    }, icon:const Icon(Icons.pause,size: 80,)),
   );
 }

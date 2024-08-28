@@ -10,6 +10,7 @@ class ScoreDbServices {
     var box=await Hive.openBox<GameScoreModel>('scores');
    await box.add(score);
    await box.close();
+   await getAllScores();
   }
   Future<void> getAllScores ()async
   {
